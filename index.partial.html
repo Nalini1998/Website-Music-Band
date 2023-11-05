@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Meow Nalini Music Band</title>
+<head>
+  <title>Nalini Porfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courier New">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+body {font-family: "Roboto", sans-serif}
+.mySlides {display: none}
+  
+  /* The popup chat - hidden by default */
+  .chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 320px;
+    padding: 10px;
+    background-color: rgb(234, 250, 253);
+  }
+
+  /* Full-width textarea */
+  .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: none;
+    background: #ffffff;
+    resize: none;
+    min-height: 200px;
+
+      {
+      box-sizing: border-box
+    }
+
+    ;
+  }
+
+  /* When the textarea gets focus, do something */
+  .form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  /* Set a style for the submit/send button */
+  .form-container .btn {
+    background-color: #0494aa;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+  }
+
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: rgb(58, 58, 58);
+  }
+
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover,
+  .open-button:hover {
+    opacity: 1;
+  }
+
+  /* Searching Bar */
+  input[type=text] {
+    width: 100px;
+    box-sizing: border-box;
+    border: 1px solid rgb(222, 237, 242);
+    border-radius: 5px;
+    font-size: 12px;
+    background-color: rgba(2, 9, 255, 0.1);
+    background-image: url('searchicon.png');
+    background-position: 0px 10px;
+    background-repeat: no-repeat;
+    padding: 8px 8px 12px 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin-top: 0px;
+  }
+
+  input[type=text]:focus {
+    width: 100%;
+    border: 1px solid rgb(222, 237, 242);
+  }
+  
+/*  Scroll back to top */
+  #backButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 120px;
+    z-index: 99;
+    font-size: 10px;
+    border: none;
+    outline: none;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  #backButton:hover {
+    background-color: #555;
+  }
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card" style="width:100%">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#home" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button> 
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#merchandise" class="w3-bar-item w3-button">Merchandise</a>
+        <a href="#extras" class="w3-bar-item w3-button">Extras</a>
+        <a href="#media" class="w3-bar-item w3-button">Media</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+   <div class="w3-panel w3-large w3-margin-top w3-padding-large">
+      <i class="fa fa-github w3-text-white w3-hover-opacity w3-animate-zoom"></i>
+      <i class="fa fa-linkedin w3-text-white w3-hover-opacity w3-animate-zoom"></i>
+      <i class="fa fa-facebook-official w3-text-white w3-hover-opacity w3-animate-zoom"></i>
+      <i class="fa fa-instagram w3-text-white w3-hover-opacity w3-animate-zoom"></i>
+      <i class="fa fa-pinterest-p w3-text-white w3-hover-opacity w3-animate-zoom"></i>
+      <i class="fa fa-twitter w3-text-white w3-hover-opacity w3-animate-zoom"></i>
+
+    </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:50px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#more" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MORE</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content w3-white" style="max-width:2000px;margin-top:46px">
+
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://assets.codepen.io/10602517/Nalini+Band+4.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-medium">
+      <h3>Ho Chi Minh City</h3>
+      <p><b>We had the best time playing at Meow Rooftop!</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://assets.codepen.io/10602517/Nalini+Band+3.jpg"  style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-medium">
+      <h3>Ha Noi Capital</h3>
+      <p><b>The atmosphere in our Ha Noi Capital</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://assets.codepen.io/10602517/Nalini+Band+2.jpg"  style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-medium">
+      <h3>Da Nang City</h3>
+      <p><b>Thank you, Danang - An unforgettable night of us.</b></p>    
+    </div>
+  </div>
+
+  <div class="w3-content w3-text-white w3-row-padding" style="max-width: 80px">
+    <p>***</p>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-large" id="band" style="max-width:1500px">
+    <h2 class="w3-wide">MEOW BAND</h2>
+    <p class="w3-opacity"><i>Music is our big passion in life!</i></p>
+    <p class="w3-justify">We have created a fictional band website. Nalini Vo, Meow Nalini, and Meow Meow, who moved back to Ho Chi Minh city, continued to operate as the Band and released three indifferent albums in the 2020s. Can Trien Trang remained in Ha Noi Capital, where he made several solo albums and created film soundtracks.</p>
+    <div class="w3-row w3-padding-16 w3-text-black w3-light-grey">
+      <div class="w3-third w3-hover-opacity w3-animate-zoom">
+        <p>Trang Can Trien</p>
+        <img src="https://assets.codepen.io/10602517/IMG_profile_7.jpg" class="w3-round w3-margin-bottom w3-padding-32" alt="Nalini Vo" style="width:90%">
+      </div>
+      <div class="w3-third w3-hover-opacity w3-animate-zoom">
+        <p>Meow Nalini</p>
+        <img src="https://assets.codepen.io/10602517/IMG_profile_6.jpg" class="w3-round w3-margin-bottom w3-padding-32" alt="Meow Nalini" style="width:90%">
+      </div>
+      <div class="w3-third w3-hover-opacity w3-animate-zoom">
+        <p>Nalini Vo</p>
+        <img src="https://assets.codepen.io/10602517/IMG_profile_5.jpg" class="w3-round w3-padding-32" alt="Meow Meow" style="width:90%">
+      </div>
+    </div>
+  </div>
+
+<p></p>
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    
+    <div class="w3-container w3-content w3-padding-32">
+      <h2 class="w3-wide w3-center">BOOKING YOUR TICKET</h2>
+      <p class="w3-opacity w3-center"><i>Don't forget us!</i></p><br>
+
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding">April <span class="w3-tag w3-red w3-margin-left">Sold out!</span></li>
+        <li class="w3-padding">May <span class="w3-tag w3-red w3-margin-left">Sold out!</span></li>
+        <li class="w3-padding">June <span class="w3-tag w3-red w3-margin-left">Sold out!</span></li>
+        <li class="w3-padding">July <span class="w3-badge w3-red w3-right w3-margin-right">1998</span></li>
+      </ul>
+
+      <div class="w3-row-padding w3-padding-32 w3-center">
+        <div class="w3-third w3-margin-bottom" style="max-height: 80px">
+          <img src="https://assets.codepen.io/10602517/HCMC_Show.jpg" style="width:100%" class="w3-hover-white">
+          <div class="w3-container w3-white">
+            <br>
+            <p><b>Ho Chi Minh City</b></p>
+            <p class="w3-opacity">Fri 28 July 2023</p>
+            <p>A freewheeling, cosmopolitan metropolis, Ho Chi Minh city's dynamic cityscape draws together old and new Vietnam in the most compact of spaces.</p>
+            <button class="w3-button w3-black w3-center w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://assets.codepen.io/10602517/HaNoi_Show.jpg" alt="Ha Noi Capital" style="width:100%" class="w3-hover-white">
+          <div class="w3-container w3-white">
+            <br>
+            <p><b>Ha Noi Capital</b></p>
+            <p class="w3-opacity">Tue 25 July 2023</p>
+            <p>Hanoi, the capital of Vietnam, is one of the most ancient cities in the world. This place offers examples of both contemporary and classical architecture.</p>
+            <button class="w3-button w3-black w3-center w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://assets.codepen.io/10602517/DaNang_Show.jpg" alt="Da Nang City" style="width:100%" class="w3-hover-white">
+          <div class="w3-container w3-white">
+            <br>
+            <p><b>Da Nang City</b></p>
+            <p class="w3-opacity">Mon 31 July 2023</p>
+            <p>Da Nang is the largest city in the Middle Coast of Vietnam. It offers many things for tourists to discover and experience and it promises to be a very luxurious attraction.</p>
+            <button class="w3-button w3-black w3-center w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-64"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="https://github.com/Nalini1998" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+  <p></p>
+  <p></p>
+
+<!-- Image of location/map -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1959.6581666262718!2d106.69007778167725!3d10.787066268496323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3300d86e47%3A0x9f97de89193d4d1b!2sLagom%20Cafe%20-%20Coffee%20%26%20Belgian%20Beer%20Lounge!5e0!3m2!1sfr!2s!4v1689582529149!5m2!1sfr!2s" style="border:2px" width="100%" height="600" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<p></p>
+<p></p>
+<!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64 w3-white w3-text-black" id="contact" style="max-width:800px">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Are you our fan? Drop us a note!</i></p>
+    <div class="w3-row w3-row-padding">
+
+      <div class="w3-col m6 w3-medium w3-margin-bottom" style="max-width:800px">
+        <i class="fa fa-map-marker" style="width:50px"></i> Location: Ho Chi Minh City, Vietnam<br>
+        <i class="fa fa-phone" style="width:50px"></i> Phone: (+84) 385 806 448<br>
+        <i class="fa fa-envelope" style="width:50px"> </i> Email: Meow.nalini98@gmail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Your Name" required name="Your Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Your Email" required name="Your Name">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Your Message" required name="Your Name">
+          <button class="w3-button w3-white w3-section w3-black" type="submit">SEND MESSAGE</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<p></p>
+
+<!-- Footer -->
+<footer>
+</footer>
+      <div class="w3-light-grey w3-center w3-padding-32 w3-margin-bottom">Powered by <a href="https://github.com/Nalini1998" title="@Meow.Nalini98" target="_blank" class="w3-hover-white">@Meow.Nalini98</a></div>
+    </div>
+    <button onclick="topFunction()" id="backButton" title="Go to top">Top</button>
+  </div>
+<script>
+
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>
