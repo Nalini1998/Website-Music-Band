@@ -1,6 +1,6 @@
 # Website-Music Band
 
-[A Pen created on CodePen.io](https://codepen.io/Nalini1998/live/jOQRdVb/e7bcbaf1087beb2e7cc05b36ab3f5f39) by [Nalini Vo](https://github.com/Nalini1998).
+[A Pen created on CodePen.io](https://codepen.io/Nalini1998/live/jOQRdVb/e7bcbaf1087beb2e7cc05b36ab3f5f39).
 
 # README
 
@@ -20,4 +20,4 @@ The booking tickets section includes a title and a tagline to encourage users to
 * jQuery - for easy manipulation of HTML documents
 
 ## Credits
-This webpage was created by an unknown author. The images used in the band section were obtained from CodePen and are credited to the Meow Nalini Music Band.
+This webpage was created by [Nalini Vo](https://github.com/Nalini1998). The images used in the band section were obtained from CodePen and are credited to the Meow Nalini Music Band.
