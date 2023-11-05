@@ -4,7 +4,7 @@
 
 # README
 
-This code is a HTML webpage for the Meow Nalini Music Band that includes a section for booking tickets to their shows. The webpage includes several links to external stylesheets and libraries for fonts, icons, and responsiveness. 
+This code is a HTML webpage for the Meow Nalini Music Band that includes a section for booking tickets to their shows. The webpage includes several links to external stylesheets and libraries for fonts, icons, and responsiveness.
 
 ## Preview
 ![Alt text](https://assets.codepen.io/10602517/Website_Music+Band.png)
